@@ -13,11 +13,6 @@ public class CarController : MonoBehaviour
 
     float speed, currentSpeed;
     float rotate, currentRotate;
-    int driftDirection;
-    float driftPower;
-    int driftMode = 0;
-    bool first, second, third;
-    Color c;
 
     [Header("Parameters")]
 
@@ -25,9 +20,6 @@ public class CarController : MonoBehaviour
     public float steering = 80f;
     public float gravity = 10f;
     public LayerMask layerMask;
-    
-    Vector3 _moveVector = new Vector3(0f, 0f, 0f);                  // 移動速度の入力
-    public float moveForceMultiplier = 1f;     // 移動速度の入力に対する追従度
 
     // Start is called before the first frame update
     void Start()
